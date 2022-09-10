@@ -11,10 +11,7 @@
 <body>
     <header class="mainHeader">
         <nav>
-            <p class="logo">serenity</p>
-            
-            
-            
+            <p class="logo" onclick="logged()">serenity</p>
         </nav>
     </header>
     <div class="loginTable">
@@ -43,7 +40,7 @@
                 <td class="external"><button type="button" class="button"><a href="feedback.html">Feedback</a></button></td>
             </tr>
             <tr>
-                <td colspan="2" class="address "><div class="homeNotification"><u>NOTE:</u> To return to this Welcome page from the links provided on the right, click on the <em>"Serenity" </em> logo on the top left of the page.</div></td>
+                <td colspan="2" class="address "><div class="homeNotification" id="closeNotification" onclick="changeStyle()"><u>NOTE:</u> To return to this Welcome page from the links provided on the right, click on the <em>"Serenity" </em> logo on the top left of the page. Click to close this box.</div></td>
                 <td colspan="2"><button type="button" class="button logout" id="logout"><a href="../home_/home_.html">Log out</a></button></td>
             </tr>
             <tr>
@@ -61,6 +58,23 @@
 
         if (name !== "loggedIn"){
             alert(`Welcome, `+ name + `!`);
+        }
+
+        if (name === "loggedIn"){
+                var element = document.getElementById("closeNotification");
+                element.style.display = "none";
+            }
+
+        function changeStyle(){
+            
+            var element = document.getElementById("closeNotification");
+            element.style.display = "none";
+            
+        }
+
+        function logged(){
+            var username = "loggedIn";
+            window.location = "../home/home.html?name="+username;
         }
         
     </script> 

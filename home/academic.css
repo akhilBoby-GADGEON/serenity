@@ -7,6 +7,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@font-face { 
+    font-family: Roboto; 
+    src: url('../fonts/Roboto/Roboto-Regular.ttf'); 
+}
+@font-face { 
+    font-family: Aboreto; 
+    src: url('../fonts/Aboreto/Aboreto-Regular.ttf'); 
+}
+@font-face { 
+    font-family: Poppins; 
+    src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+}
+
 html {
     overflow-x: hidden;
 }
@@ -156,6 +169,7 @@ nav {
     width: auto;
     height: 10%;
     font-weight: bolder;
+    cursor: pointer;
     
 }
 
