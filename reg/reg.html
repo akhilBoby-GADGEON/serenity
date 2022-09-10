@@ -15,26 +15,36 @@
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
             var confirmPassword = document.getElementById("confirmPassword").value;
+            var val = 0;
 
             if(email == "")
             {
                 alert("Please enter your email.");
+                val+=1;
             }
             if(fullName == "")
             {
                 alert("Please enter your name.");
+                val+=1;
             }
             if(username == "")
             {
                 alert("Please enter your username.");
+                val+=1;
             }
             if(password == "")
             {
                 alert("Please enter your password.");
+                val+=1;
             }
             if(confirmPassword == "")
             {
                 alert("Please confirm your password.");
+                val+=1;
+            }
+
+            if(val === 0){
+                window.location = "../login/login.html";
             }
         }
     </script>
