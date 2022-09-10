@@ -1,0 +1,13 @@
+body {
+    margin: -1px -1px;
+    padding: -1px -1px;
+    border: -1px -1px;
+    display: block;
+    background: url('../shooting.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}

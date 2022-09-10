@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="sc1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+
+    <link href="bmiCalculator.css" rel="stylesheet">
+    <script src="bmi.js"></script>
+
+    <script>
+        function logged(){
+            var username = "loggedIn";
+            window.location = "../home/home.html?name="+username;
+        }
+    </script>
+    
+</head>
+<body>
+    <header class="mainHeader">
+        <nav>
+            <div>
+                <p class="logo" onclick="logged()">serenity</p>
+            </div>
+        </nav>
+    </header>
+    <div class="loginTable">
+        <table class="loginBox">
+            <tr>
+                <td>Height</td>
+                <td><input type="text" id="height"></td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td><input type="text" id="weight"></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="button" id="btn">Calculate</button></td> 
+            </tr>
+            <tr>
+                <td><div id="result"></div></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+</body>
+</html>

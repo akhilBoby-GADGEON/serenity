@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="sc1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic</title>
+
+    <link href="academic.css" rel="stylesheet">
+
+    <script>
+        function logged(){
+            var username = "loggedIn";
+            window.location = "../home/home.html?name="+username;
+        }
+    </script>
+</head>
+<body>
+    <header class="mainHeader">
+        <nav>
+            <p class="logo" onclick="logged()">serenity</p>
+            
+            
+            
+        </nav>
+    </header>
+    <div class="loginTable">
+        <table class="loginBox">
+            <tr>
+                <td class="regMargin"></td>
+                <td class="regMargin"></td>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <th>Stream</th>
+                <th>Syllabus</th>
+                <th>Institution</th>
+                <th>CGPA</th>
+            </tr>
+            <tr>
+                <td>B.tech</td>
+                <td>Computer Science</td>
+                <td>KTU</td>
+                <td>College of Engineering, Perumon.</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>Higher Secondary</td>
+                <td>Computer Science</td>
+                <td>Kerala Board</td>
+                <td>St.John's RHSS</td>
+                <td>8.6</td>
+            </tr>
+            <tr>
+                <td>Secondary</td>
+                <td>Science</td>
+                <td>CBSE</td>
+                <td>Trinity Lyceum</td>
+                <td>9.8</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="regMarginBot"></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="sc1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link href="reg.css" rel="stylesheet">
+
+    <script>
+        function thedata(){
+            var email = document.getElementById("email").value;
+            var fullName = document.getElementById("fullName").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if(email == "")
+            {
+                alert("Please enter your email.");
+            }
+            if(fullName == "")
+            {
+                alert("Please enter your name.");
+            }
+            if(username == "")
+            {
+                alert("Please enter your username.");
+            }
+            if(password == "")
+            {
+                alert("Please enter your password.");
+            }
+            if(confirmPassword == "")
+            {
+                alert("Please confirm your password.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="mainHeader">
+        <nav>
+            <p class="logo" id="logo"><a>Serenity</a></p>
+        </nav>
+    </header>
+    <div class="loginTable">
+        <table class="loginBox">
+            <tr>
+                <td rowspan="7" class="regImage" id="regImage"></td>
+                <td rowspan="7" class="regImagePlacebo"></td>
+                <td class="regMargin"></td>
+                <td class="regMargin"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" id="fullName"></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" id="password"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="text" id="confirmPassword"></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="button" onclick="thedata()">Submit</button></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+</body>
+</html>

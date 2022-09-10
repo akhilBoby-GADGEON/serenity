@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="sc1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="login.css" rel="stylesheet">
+
+    <script>
+        function login(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if(username === "admin" && password === "admin"){
+                window.location = "../home/home.html?name="+username;
+            }
+            else{
+                alert("Wrong username/password combination!")
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <header class="mainHeader">
+        <nav>
+            <div>
+                <p class="logo">Serenity</p>
+            </div>
+        </nav>
+    </header>
+    <div class="loginTable">
+        <table class="loginBox">
+            <tr>
+                <td>Username</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" id="password"></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="button" onclick="login()"><a>Login</a></button></td>
+                <td><button type="button" class="button"><a href="../reg/reg.html">Sign Up</a></button></td>
+                
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+</body>
+</html>

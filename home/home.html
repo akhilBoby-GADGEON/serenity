@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="sc1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <link href="home.css" rel="stylesheet">
+
+    <script>
+        var url_string = window.location;
+        var url = new URL(url_string);
+        var name = url.searchParams.get("name");
+
+        if (name !== "loggedIn"){
+            alert(`Welcome, `+ name + `!`);
+        }
+        
+    </script> 
+</head>
+<body>
+    <header class="mainHeader">
+        <nav>
+            <p class="logo">serenity</p>
+            
+            
+            
+        </nav>
+    </header>
+    <div class="loginTable">
+        <table class="loginBox">
+            <tr>
+                <td rowspan="7" class="regImage"></td>
+                <td rowspan="7" class="regImagePlacebo"></td>
+                <td class="regMargin"></td>
+                <td class="regMargin"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="name">Jane Patrick</td>
+                <td class="external"><button type="button" class="button"><a href="academic.html">Academic</a></button></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="phno">+1 347 562 4877</td>
+                <td class="external"><button type="button" class="button"><a href="extracurricular.html">Extra-curricular</a></button></td>
+                
+            </tr>
+            <tr>
+                <td colspan="2" class="email">janepatrick@gmail.com</td>
+                <td class="external"><button type="button" class="button"><a href="bmiCalculator.html">BMI Calculator</a></button></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="address">3880 Southeast 131st Place, <br>Belleview, <br>FL 34420</td>
+                <td class="external"><button type="button" class="button"><a href="feedback.html">Feedback</a></button></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="address "><div class="homeNotification"><u>NOTE:</u> To return to this Welcome page from the links provided on the right, click on the <em>"Serenity" </em> logo on the top left of the page.</div></td>
+                <td colspan="2"><button type="button" class="button logout" id="logout"><a href="../login/login.html">Log out</a></button></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="regMarginBot"></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+</body>
+</html>
