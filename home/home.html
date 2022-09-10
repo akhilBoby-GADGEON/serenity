@@ -7,17 +7,6 @@
     <title>Welcome</title>
 
     <link href="home.css" rel="stylesheet">
-
-    <script>
-        var url_string = window.location;
-        var url = new URL(url_string);
-        var name = url.searchParams.get("name");
-
-        if (name !== "loggedIn"){
-            alert(`Welcome, `+ name + `!`);
-        }
-        
-    </script> 
 </head>
 <body>
     <header class="mainHeader">
@@ -55,7 +44,7 @@
             </tr>
             <tr>
                 <td colspan="2" class="address "><div class="homeNotification"><u>NOTE:</u> To return to this Welcome page from the links provided on the right, click on the <em>"Serenity" </em> logo on the top left of the page.</div></td>
-                <td colspan="2"><button type="button" class="button logout" id="logout"><a href="../login/login.html">Log out</a></button></td>
+                <td colspan="2"><button type="button" class="button logout" id="logout"><a href="../home_/home_.html">Log out</a></button></td>
             </tr>
             <tr>
                 <td colspan="2" class="regMarginBot"></td>
@@ -65,5 +54,15 @@
     <footer>
         <div class="footer"></div>
     </footer>
+    <script>
+        var url_string = window.location;
+        var url = new URL(url_string);
+        var name = url.searchParams.get("name");
+
+        if (name !== "loggedIn"){
+            alert(`Welcome, `+ name + `!`);
+        }
+        
+    </script> 
 </body>
 </html>
